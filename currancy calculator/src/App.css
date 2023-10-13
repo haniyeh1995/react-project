@@ -1,0 +1,60 @@
+ @import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;500&display=swap');
+
+ * {
+   font-family: 'Figtree', sans-serif;
+ }
+
+ #root {
+   display: flex;
+   flex-direction: column;
+   background-color: rgb(243, 118, 118);
+   border: 30px solid rgb(133, 212, 243);
+   border-radius: 30px;
+   max-width: 1280px;
+   height: 600px;
+   margin: 0 auto;
+   padding: 20px;
+   text-align: center;
+   gap: 40px;
+ }
+
+ .title {
+   color: black;
+   font-size: 70px;
+   margin-bottom: 20px;
+ }
+
+ .space {
+   border: 5px solid rgb(119, 5, 5);
+ 
+ }
+
+ .example {
+  margin-top: 20px;
+   color: black;
+   font-size: 30px;
+   font-weight: 100px;
+ }
+
+ .date {
+   color: black;
+   font-size: 20px;
+   font-weight: 90px;
+ }
+
+ .inputs {
+  background-color: beige;
+  color: black;
+   padding: 10px 10px;
+   font-size: 30px;
+   margin: 10px 5px;
+
+ }
+
+ .currencyFrom,
+ .currencyTo {
+   display: flex;
+   gap: 10px;
+   align-items: center;
+   justify-content: center;
+ }

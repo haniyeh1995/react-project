@@ -1,0 +1,20 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: rgb(240, 175, 96);
+  border: 20px solid rgb(92, 92, 194);
+  border-radius: 10px;
+}
+
+.action-button {
+  height: 3em;
+  padding: 1.5em;
+  margin: 15px;
+  transition: filter 300ms;
+  text-align:center;
+}
+
+
+
