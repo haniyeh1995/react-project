@@ -1,0 +1,22 @@
+.story>img {
+    border-radius: 47.5px;
+    width: 70px;
+    padding: 1px;
+    margin: 0 15px;
+}
+
+.story>p {
+    color: var(--color-light-heading-c-1-light, #171923);
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    text-align: center;
+    margin: 8px 0;
+}
+
+.seen-story {
+    border: 1px solid var(--color-light-story-active-c-1-light, #A0B0FC);
+}

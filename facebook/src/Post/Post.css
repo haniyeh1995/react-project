@@ -1,0 +1,138 @@
+.post-container {
+    border-radius: 12px;
+    background: var(--color-light-card-bg-c-2-light, #FFF);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.createpost-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-light-p-text-c-1-light, #5B5D67);
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 145%;
+
+    /* 20.3px */
+    @media (max-width : 500px) {
+        font-size: 2.8vw;
+    }
+
+}
+
+.createpost-attaches {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+
+    @media (max-width : 500px) {
+        gap: 1.8vw;
+    }
+}
+
+.createpost-actions>button {
+    border-radius: 6px;
+    background: var(--global-global-primary-c-1, #4361EE);
+    height: 40px;
+    border: none;
+    padding: 0px 20px;
+    color: var(--global-neutral-white, #FFF);
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+}
+
+.post-content {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.post-content>p {
+    color: var(--color-light-p-text-c-1-light, #5B5D67);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+
+}
+
+.createpost-content {
+    display: flex;
+    gap: 12px;
+    align-items: start;
+
+
+}
+
+.createpost-content>img {
+    margin-top: 3.5px;
+    width: 40px;
+    height: 40px;
+
+}
+
+.createpost-content>input {
+    color: var(--color-light-p-text-c-1-light, #5B5D67);
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    flex-grow: 1;
+    padding: 15px 12px;
+    border-radius: 8px;
+    background: var(--color-light-form-input-c-1-light, #FAFBFF);
+    border: none;
+
+}
+
+button.share {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--color-light-p-text-c-1-light, #5B5D67);
+    font-family:'Inter', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 145%;
+    /* 20.3px */
+    background-color: unset;
+
+    @media (max-width : 500px) {
+        font-size: 2.8vw;
+    }
+}
+
+.creator-profile {
+    display: flex;
+    gap: 10px;
+    border-radius: 50%;
+}
+
+.posts-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    /* border-radius: 100%; */
+}
+
+.post-content>img {
+    border-radius: 10px;
+    height: auto;
+align-self: stretch;
+    
+
+}
