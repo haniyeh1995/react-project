@@ -2,17 +2,17 @@ import './Wrapper.css'
 import PropTypes from 'prop-types'
 
 function Wrapper(props){
-    const childern = props.childern
+    const children = props.children
     return(
         <>
-        <div className='wrapper'>{childern}</div>
+        <div className='wrapper'>{children}</div>
         </>
     )
 
 }
 
 Wrapper.propTypes = {
-    childern: PropTypes.string,
+    children: PropTypes.node,
 }
 
 export default Wrapper
