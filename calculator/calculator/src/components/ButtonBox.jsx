@@ -2,15 +2,15 @@ import './ButtonBox.css'
 import PropTypes from 'prop-types'
 
 function ButtonBox (props){
-const childern = props.childern
+const children = props.children
     return(
         <>
-        <div className='buttonBox'>{childern}</div>
+        <div className='buttonBox'>{children}</div>
         </>
     )
 }
 ButtonBox.propTypes = {
-    childern: PropTypes.string,
+    children: PropTypes.string,
 }
 
 export default ButtonBox
