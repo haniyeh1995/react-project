@@ -1,0 +1,12 @@
+.container {
+    max-width: 1080px;
+    margin: 25px auto;
+
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: rgb(55, 70, 70);
+    font-size: 30px;
+}
