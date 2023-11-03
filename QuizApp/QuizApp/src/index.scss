@@ -1,0 +1,158 @@
+$primary: rgb(185, 245, 225);
+$accent: #034736;
+$bg: #ffff;
+$bg-accent: rgb(180, 180, 204);
+$disabled: rgb(121, 122, 122);
+$foreground: rgb(46, 58, 114);
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(0deg, $primary 0.03%, $accent);
+    color: $foreground;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    direction: ltr;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.quiz-container {
+    width: 600px;
+    background: $bg;
+    border-radius: 5px;
+    margin-top: 150px;
+    padding: 30px 60px;
+    position: relative;
+
+    .start{
+        margin: auto;
+        text-align: center;
+        padding: 20px 0;
+
+        h3{
+            font-size: 38px;
+        }
+
+        button{
+            background: linear-gradient(10deg, $foreground 7.03%, $accent);
+            margin-top: 50px;
+            font-size: 24px;
+        }
+    }
+
+    .active-question {
+        font-size: 28px;
+        font-weight: 500;
+        color: $foreground;
+    }
+
+    .total-question {
+        font-size: 16px;
+        font-weight: 500;
+        color: $disabled;
+    }
+
+    h2 {
+        font-size: 18px;
+        font-weight: 800;
+        margin: 0;
+        margin-top: 15px;
+        margin-left: -10px;
+    }
+
+    ul {
+        margin-top: 20px;
+        margin-left: -10px;
+
+        li {
+            font-weight: 600;
+            text-decoration: none;
+            list-style: none;
+            cursor: pointer;
+            color: $foreground;
+            background-color: $bg;
+            font-size: 16px;
+            border: 1px solid $disabled;
+            border-radius: 10px;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        .selected-answer {
+            background-color: $accent;
+            border: 1px solid $bg-accent;
+            color: $bg;
+        }
+
+    }
+
+    .footer {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    button {
+        background: linear-gradient(0deg, $primary 0.1%, $accent);
+        border-radius: 10px;
+        font-size: 16px;
+        color: $bg;
+        padding: 10px 40px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        margin-top: 15px;
+
+        &:disabled {
+            background-color: $disabled;
+            color: $accent;
+            cursor: not-allowed;
+        }
+    }
+
+    .result {
+        text-align: center;
+
+        h3 {
+            font-size: 24px;
+            letter-spacing: 1.4px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        span {
+            color: $foreground;
+            font-size: 22px;
+        }
+    }
+
+    .answer-timer{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        border-bottom: 1px solid $accent;
+    }
+
+    .progress{
+        height: 6px;
+        transition-duration: 1s;
+        width: 0;
+        transition-timing-function: linear;
+        background-color: red;
+        
+    }
+
+}
