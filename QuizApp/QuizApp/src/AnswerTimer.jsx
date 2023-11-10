@@ -8,8 +8,8 @@ const AnswerTimer = ({ duration, onTimeUp }) => {
 
     useEffect(() => {
         intervalRef.current = setInterval(() => {
-            setCounter((cur) => cur + 0.1);
-        }, 100);
+            setCounter((cur) => cur + 1);
+        }, 1000);
 
         return () => clearInterval(intervalRef.current);
     }, []);
@@ -20,7 +20,7 @@ const AnswerTimer = ({ duration, onTimeUp }) => {
             clearInterval(intervalRef.current);
             setTimeout(() => {
                 onTimeUp();
-            }, 100);
+            }, 1000);
         }
     }, [counter]);
 
