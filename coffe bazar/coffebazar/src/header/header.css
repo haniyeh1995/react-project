@@ -27,16 +27,7 @@
     cursor: pointer;
 }
 
-.tab-key {
-    text-decoration: none;
-    color: var(--color-light-p-text-c-1-light, #5B5D67);
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    padding: 8px 15px;
 
-}
 
 .selected-view {
     border-radius: 8px;
@@ -49,4 +40,19 @@
     width: 100px;
     height: 55px;
     background-color: none;
+}
+
+@media (max-width:500px) {
+    .header {
+        gap: 0.5vw;
+    }
+
+    .tabs-group {
+        display: none;
+    }
+
+    .profile-img{
+        display: none;
+    }
+
 }
