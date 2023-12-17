@@ -1,0 +1,52 @@
+.search {
+    height: 50px;
+    width: 222px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 16px;
+}
+
+.header {
+    display: flex;
+    border-radius: 12px;
+    background: var(--color-light-card-bg-c-1-light, #FCFCFC);
+    align-items: center;
+    gap: 30px;   
+    
+}
+
+.tabs-group {
+    display: flex;
+    flex-grow: 1;
+    list-style: none;
+    gap: 15px;
+    align-items: center;
+    padding: 0;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.tab-key {
+    text-decoration: none;
+    color: var(--color-light-p-text-c-1-light, #5B5D67);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 8px 15px;
+
+}
+
+.selected-view {
+    border-radius: 8px;
+    background: var(--global-global-primary-c-1, #318b25);
+    padding: 10px;
+    color: var(--global-neutral-white, #FFF);
+}
+
+.profile-img {
+    width: 100px;
+    height: 55px;
+    background-color: none;
+}
