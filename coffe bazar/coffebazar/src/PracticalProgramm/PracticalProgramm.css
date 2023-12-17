@@ -43,3 +43,12 @@
     align-items: center;
     gap: 10px;
 }
+
+@media screen and (max-width: 480px) {
+    .practical-content{
+        display: flex;
+        flex-direction: column;
+        overflow-y: scroll;
+        height: 200px;
+    }
+}

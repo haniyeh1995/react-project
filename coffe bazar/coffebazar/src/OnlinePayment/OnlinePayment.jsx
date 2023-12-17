@@ -37,7 +37,7 @@ const Onlinepayment = () => {
 
 
     return (
-        <div >
+        <div className="payment" >
             <div className="onlinePayment-header">
                 <p>بسته پرداخت انلاین </p>
                 <div className="more-detail">
