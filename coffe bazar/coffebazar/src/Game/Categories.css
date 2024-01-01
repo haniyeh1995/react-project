@@ -1,0 +1,83 @@
+.category {
+    display: flex;
+    flex-direction: row;
+    /* width: 100%; */
+    background: var(--color-light-card-bg-c-2-light, #FFF);
+    border-radius: 12px;
+    border: 1px solid rgb(128, 128, 128, 0.3);
+    margin: 20px 60px;
+    padding: 20px 60px;
+    justify-content: space-between;
+}
+
+.first,
+.second,
+.third {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.sec-cat {
+    background: var(--color-light-body-bg-light, #eaeaec);
+    border: 1px solid rgb(128, 128, 128, 0.3);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    gap: 20px;
+    border-radius: 5px;
+    padding: 0px 20px;
+    margin: 10px 10px;
+}
+
+.sec-cat h2 {
+    font-size: 16px;
+}
+
+.sec-cat svg {
+    width: 20px;
+    height: 20px;
+}
+
+.sec-cat:hover {
+    background: var(--color-light-body-bg-light, white);
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+
+}
+
+.game-program {
+    border-radius: 12px;
+    background: var(--color-light-card-bg-c-2-light, #FFF);
+    margin: 20px auto;
+    /* width: 100%; */
+    height: 60px;
+    padding: 0px 60px;
+    margin: 20px 60px;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(128, 128, 128, 0.3);
+
+}
+
+.main-game {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background: var(--color-light-body-bg-light, #F4F5F9);
+    /* margin: 20px 60px; */
+    /* padding: 0px 60px; */
+}
+
+.footer-container{
+    height: max-content;
+    background: var(--color-light-card-bg-c-1-light, #FCFCFC);
+    /* width: 120rem; */
+
+    
+    
+  }
