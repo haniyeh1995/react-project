@@ -1,6 +1,6 @@
 import './App.css'
 import { useState, useEffect } from 'react';
-import { BrowserRouter as Link, Route, Routes, useLocation } from 'react-router-dom';
+import { Link, Route, Routes, useLocation } from 'react-router-dom';
 import Categories from "./Game/Categories.jsx"
 import Searchbar from './header/searchbar/searchbar.jsx'
 import Contenticon from './header/contenticon/contenticon'
@@ -46,8 +46,8 @@ function App() {
 
 
   return (
-    <div className='container'>
 
+    <div className='container'>
       <div className='main'>
         <div className='header'>
           <img className='profile-img' src={profileInfo} alt="" />
@@ -114,7 +114,6 @@ function App() {
         </div>
 
       </div>
-
 
     </div>
   )
