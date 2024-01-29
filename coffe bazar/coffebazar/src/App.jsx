@@ -6,6 +6,7 @@ import Searchbar from './header/searchbar/searchbar.jsx'
 import Contenticon from './header/contenticon/contenticon'
 import profileimg from './header/pub/Cafe_Bazaar_logo_2020.jpg'
 import Home from './Home/Home.jsx'
+import Support from './support/Support.jsx'
 
 
 
@@ -20,7 +21,7 @@ function App() {
         item3: "کودک",
       }
     },
-    { text: "پشتیبانی", link: "/support", menu: {} },
+    { text: "پشتیبانی", link: "/Support", menu: {} },
     { text: "توسعه دهندگان بازار", link: "/developers", menu: {} },
     { text: "تبلیغات در بازار", link: "/advertising", menu: {} },
     { text: "فرصت های شغلی", link: "/job", menu: {} },
@@ -29,12 +30,17 @@ function App() {
   const profileInfo = profileimg;
   const [selectedView, setSelectedView] = useState(0);
   const [showSecondMenu, setShowSecondMenu] = useState(false);
+  const [showThirdMenu, setShowThirdMenu] = useState(false);
   const location = useLocation();
+
+  
 
   useEffect(() => {
 
     if (location.pathname === '/Categories') {
       setShowSecondMenu(false);
+    } else if (location.pathname === '/Support') {
+      setShowThirdMenu(false);
     }
   }, [location.pathname]);
 
@@ -42,9 +48,11 @@ function App() {
   const handleItemClick = (index) => {
     setSelectedView(index);
     setShowSecondMenu(index === 1);
+    setShowThirdMenu(index === 2);
+
   };
 
-
+  
   return (
 
     <div className='container'>
@@ -55,13 +63,21 @@ function App() {
             <div className='tabs-group'>
               {Tabs.map((value, index) => (
                 <div key={index} onClick={() => handleItemClick(index)} className={index === selectedView ? 'selected-view' : ''}>
-                  {value.text}
+                  {index === 2 && showThirdMenu ? (
+                    <Link className="sec-menu" to={value.link}>{value.text}</Link>
+                  ) : (
+                    <>{value.text}</>
+                  )}
 
                   {index === 1 && showSecondMenu && value.menu && (
                     <div className='submenu'>
                       <Link to={value.link}></Link>
                     </div>
                   )}
+
+                  {/* {index === 2 && showThirdMenu && (
+                    <Link to={value.link}></Link>
+                  )} */}
                 </div>
               ))}
             </div>
@@ -74,7 +90,6 @@ function App() {
                       <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
                     </svg>
                   </div>
-
                   <Link to={Tabs[1].link} className='sub'>
                     <div className='sec-item'>{Tabs[1].menu.item2}
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="arrow">
@@ -82,8 +97,6 @@ function App() {
                       </svg>
                     </div>
                   </Link>
-
-
                   <div className='sec-item'>{Tabs[1].menu.item3}
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="arrow">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
@@ -92,6 +105,10 @@ function App() {
                 </div>
               </div>
             )}
+
+            {/* {showThirdMenu && (
+              <Link to ={Tabs[2].link}></Link>
+            )} */}
 
           </div>
 
@@ -108,6 +125,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/Categories" element={<Categories />} />
+            <Route path="/Support" element={<Support />} />
 
           </Routes>
 

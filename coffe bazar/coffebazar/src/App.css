@@ -1,7 +1,7 @@
 .container {
   display: flex;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background: var(--color-light-body-bg-light, #F4F5F9);
 }
 
@@ -25,6 +25,12 @@
   
  
 
+}
+
+.sec-menu{
+  text-decoration: none; 
+  color: inherit; 
+  border-bottom: none;
 }
 
 @media screen and (max-width: 480px) {
